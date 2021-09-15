@@ -1,0 +1,164 @@
+/* import google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* reset default css */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black-color: #383838;
+  --white-color: #ffffff;
+  --main-color: #f06c4e;
+  --light-color: #f8f7f5;
+}
+
+::selection {
+  background-color: var(--main-color);
+  color: var(--light-color);
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: url(../images/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+/* weather Search Box */
+
+.weather__search__container {
+  width: 100%;
+  max-width: 570px;
+  margin: 50px auto;
+  display: flex;
+  align-items: stretch;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.weather__search__container::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 15px;
+  width: 24px;
+  height: 24px;
+  background: url(../images/search.svg) no-repeat center center / contain;
+}
+
+#weather__search__input {
+  border: 2px solid transparent;
+  background-color: var(--light-color);
+  padding: 18px 18px 18px 50px;
+  width: calc(100% - 100px);
+}
+
+#weather__search__input::placeholder {
+  color: #989898;
+}
+
+#weather__search__input:focus {
+  outline: 0;
+  border: 2px solid var(--main-color);
+}
+
+#weather__search__button {
+  background-color: var(--main-color);
+  border: 0;
+  color: var(--white-color);
+  padding: 15px 20px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* weather details */
+
+#watcher__details {
+  width: 500px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+#watcher__details img {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+}
+
+#watcher__details h1 {
+  font-size: 30px;
+  text-align: center;
+  color: var(--light-color);
+  opacity: 1;
+}
+
+#watcher__details h3 {
+  font-size: 20px;
+  text-align: center;
+  color: var(--light-color);
+  padding: 10px 0;
+}
+
+#watcher__details h3:nth-child(6) {
+  padding-bottom: 50px;
+}
+
+/*
+
+        =====================
+
+            Media Query's
+
+        =====================  
+
+*/
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #watcher__details {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #watcher__details {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #watcher__details {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  #watcher__details {
+    width: 150px;
+  }
+}

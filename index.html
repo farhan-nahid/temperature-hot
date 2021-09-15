@@ -5,6 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature Hot</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <main class="container">
+      <!-- input section start -->
+
+      <section class="weather__search__container">
+        <input
+          type="text"
+          id="weather__search__input"
+          placeholder="Enter a Location for Weather..."
+        />
+        <button id="weather__search__button">Search</button>
+      </section>
+
+      <!-- input section end -->
+
+      <!-- weather details area start -->
+
+      <section id="watcher__details">
+        <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+        <h1 id="location">Dhaka</h1>
+        <h3>Condition</h3>
+        <h3>Temperature &deg;C</h3>
+        <h3>Wind </h3>
+        <h3>Country</h3>
+      </section>
+
+      <!-- weather details area end -->
+    </main>
+  </body>
 </html>
