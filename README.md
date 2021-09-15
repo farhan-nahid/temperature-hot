@@ -8,10 +8,9 @@
 
 ##
 
-<!-- <img src="https://i.ibb.co/2PhGK0P/Monster-Is-Hungry.png" alt="Monster-Is-Hungry" border="0"> -->
+<img src="https://i.ibb.co/n0FmSzD/Temperature-Hot.png" alt="Temperature-Hot" border="0">
 
 ---
-
 
 ## Live Link
 
@@ -21,11 +20,13 @@
 
 ## API Link
 
-> Search By City Name 
+> Search By City Name
 
 ```json
-https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+https://api.openweathermap.org/data/2.5/weather?q={city-name}&appid={API-key}
 ```
+
+> API KEY
 
 ```javascript
 const apiKey = "8e0f94fc32216b36c7c2392d69cf2d72";

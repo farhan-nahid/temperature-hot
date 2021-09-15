@@ -88,12 +88,20 @@ body {
   font-weight: 700;
 }
 
+/* loading spinner */
+
+#loading__spinner img {
+  width: 550px;
+  margin: 0 auto;
+  display: flex;
+}
+
 /* weather details */
 
 #watcher__details {
   width: 500px;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 10px;
 }
