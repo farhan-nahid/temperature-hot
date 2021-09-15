@@ -8,7 +8,7 @@
 
 ##
 
-<img src="https://i.ibb.co/n0FmSzD/Temperature-Hot.png" alt="Temperature-Hot" border="0">
+<img src="https://i.ibb.co/6D3qp2k/Temperature-Hot.png" alt="Temperature-Hot" border="0">
 
 ---
 

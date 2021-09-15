@@ -116,19 +116,36 @@ body {
 #watcher__details h1 {
   font-size: 30px;
   text-align: center;
-  color: var(--light-color);
+  color: var(--main-color);
   opacity: 1;
 }
 
-#watcher__details h3 {
-  font-size: 20px;
+#watcher__details h2 {
+  font-size: 18px;
   text-align: center;
   color: var(--light-color);
   padding: 10px 0;
 }
 
-#watcher__details h3:nth-child(6) {
-  padding-bottom: 50px;
+#watcher__details h3 {
+  font-size: 25px;
+  text-align: center;
+  color: var(--main-color);
+  padding: 10px 0;
+}
+
+#watcher__details h4 {
+  font-size: 18px;
+  text-align: center;
+  color: var(--light-color);
+  padding: 10px 0;
+}
+
+#watcher__details h5 {
+  font-size: 18px;
+  text-align: center;
+  color: var(--main-color);
+  padding: 10px 0 50px 0;
 }
 
 /*
