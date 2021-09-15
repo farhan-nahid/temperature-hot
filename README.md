@@ -1,4 +1,4 @@
-# temperature-hot
+## Temperature Hot
 
 ---
 
