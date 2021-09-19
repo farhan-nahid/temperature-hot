@@ -8,7 +8,7 @@
 
 ##
 
-<img src="https://i.ibb.co/6D3qp2k/Temperature-Hot.png" alt="Temperature-Hot" border="0">
+<img src="https://i.ibb.co/SrQrMG1/Temperature-Hot.png" alt="Temperature-Hot" border="0">
 
 ---
 
@@ -20,16 +20,9 @@
 
 ## API Link
 
-> Search By City Name
 
 ```json
 https://api.openweathermap.org/data/2.5/weather?q={city-name}&appid={API-key}
-```
-
-> API KEY
-
-```javascript
-const apiKey = "8e0f94fc32216b36c7c2392d69cf2d72";
 ```
 
 ## Technology

@@ -10,6 +10,7 @@ weatherDetails.style.display = "none";
 // get input values
 
 weatherSearchButton.addEventListener("click", () => {
+  weatherDetails.style.display = 'none'
   const cityName = weatherSearchInput.value;
   spinner.style.display = "block";
   const apiKey = "8e0f94fc32216b36c7c2392d69cf2d72";
