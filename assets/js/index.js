@@ -13,9 +13,7 @@ weatherSearchButton.addEventListener("click", () => {
   const cityName = weatherSearchInput.value;
   spinner.style.display = "block";
   const apiKey = "8e0f94fc32216b36c7c2392d69cf2d72";
-  fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`
-  )
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`)
     .then((res) => res.json())
     .then((city) => {
       spinner.style.display = "none";
@@ -40,7 +38,7 @@ const displayCity = (city) => {
             <img src='https://openweathermap.org/img/wn/${weather[0].icon}@2x.png' alt="${name}" />
             <h1>City: ${name}</h1>
             <h4>${weather[0].main}</h4>
-            <h3>${main.temp}&deg;F</h3>
+            <h3>${main.temp}&deg;C</h3>
             <h2>Wind Speed: ${wind.speed}</h2>
             <h5>Country: ${sys.country}</h5>
       `;
